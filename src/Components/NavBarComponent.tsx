@@ -16,12 +16,16 @@ const NavBarComponent = () => {
         router.push('/Champions')
     }
 
-    const handleOpenProjects = () => {
-        router.push('/Projects')
+    const handleOpenMonsters = () => {
+        router.push('/Monsters')
     }
 
-    const handleOpenInformation = () => {
-        router.push('/Information')
+    const handleOpenItems = () => {
+        router.push('/Items')
+    }
+
+     const handleOpenBuilds = () => {
+        router.push('/Builds')
     }
 
 
@@ -44,13 +48,13 @@ const NavBarComponent = () => {
             <button className='cursor-pointer hover:text-emerald-200 hover:border-b border-white transition-colors' onClick={handleOpenChampions}>
                 Champions
             </button>
-            <button className='cursor-pointer hover:text-emerald-200 hover:border-b border-white transition-colors' onClick={handleOpenProjects}>
+            <button className='cursor-pointer hover:text-emerald-200 hover:border-b border-white transition-colors' onClick={handleOpenItems}>
                 Items
             </button>
-            <button className='cursor-pointer hover:text-emerald-200 hover:border-b border-white transition-colors' onClick={handleOpenInformation}>
+            <button className='cursor-pointer hover:text-emerald-200 hover:border-b border-white transition-colors' onClick={handleOpenMonsters}>
                 Monsters
             </button>
-            <button className='cursor-pointer hover:text-emerald-200 hover:border-b border-white transition-colors' onClick={handleOpenInformation}>
+            <button className='cursor-pointer hover:text-emerald-200 hover:border-b border-white transition-colors' onClick={handleOpenBuilds}>
                 Builds
             </button>
         </div>
