@@ -11,11 +11,8 @@ const Layout = ({
     <div className="text-white">
       {/* Navbar  */}
       <NavBarComponent />
-      
       {/* Main Content */}
-      <div className="w-full min-h-screen">
         {children}
-      </div>
     </div>
   );
 };
