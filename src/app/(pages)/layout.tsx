@@ -8,7 +8,7 @@ const Layout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="text-white">
+    <div className="">
       {/* Navbar  */}
       <NavBarComponent />
       {/* Main Content */}

@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import Logo from "@/Assets/LeagueLogo.jpg";
+import Logo from "@/Assets/onevnine.png";
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
@@ -32,7 +32,7 @@ const NavBarComponent = () => {
 
 
   return (
-    <div className='bg-gradient-to-r from-emerald-400 to-cyan-400 h-16 w-full sticky top-0 z-50'>
+    <div className='bg-gradient-to-r from-purple-500 to-cyan-500 h-16 w-full sticky top-0 z-50'>
     <div className='flex justify-between items-center h-full px-4 sm:px-6 lg:px-8'>
         
         {/* Logo */}
@@ -41,38 +41,38 @@ const NavBarComponent = () => {
                 src={Logo}
                 alt='Logo'
                 priority
-                className='h-10 w-20 sm:h-12 sm:w-24 lg:h-[60px] lg:w-[120px]'
+                className='h-10 w-20 sm:h-12 sm:w-24 lg:h-[100px] lg:w-[140px]'
             />
         </div>
 
         {/* Desktop Navigation */}
         <div className='hidden md:flex items-center space-x-4 lg:space-x-8 xl:space-x-12'>
             <button 
-                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 hover:border-b-2 border-white transition-all duration-200 ease-in-out' 
+                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 transition-all duration-200 ease-in-out' 
                 onClick={handleOpenHome}
             >
                 Home
             </button>
             <button 
-                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 hover:border-b-2 border-white transition-all duration-200 ease-in-out' 
+                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 transition-all duration-200 ease-in-out' 
                 onClick={handleOpenChampions}
             >
                 Champions
             </button>
             <button 
-                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 hover:border-b-2 border-white transition-all duration-200 ease-in-out' 
+                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 transition-all duration-200 ease-in-out' 
                 onClick={handleOpenItems}
             >
                 Items
             </button>
             <button 
-                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 hover:border-b-2 border-white transition-all duration-200 ease-in-out' 
+                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 transition-all duration-200 ease-in-out' 
                 onClick={handleOpenMonsters}
             >
                 Monsters
             </button>
             <button 
-                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 hover:border-b-2 border-white transition-all duration-200 ease-in-out' 
+                className='px-3 py-2 text-sm lg:text-lg xl:text-xl font-semibold cursor-pointer hover:text-emerald-200 transition-all duration-200 ease-in-out' 
                 onClick={handleOpenBuilds}
             >
                 Builds
